@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test StockTrack" thread-count="2" parallel="classes">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="Utils.AllureTestListener"/>
+    </listeners>
+    <test name="Test Function">
+        <classes>
+            <class name="Testcases.Test_AddUser" />
+            <class name="Testcases.Test_StockInPage" />
+        </classes>
+    </test>
+</suite>
